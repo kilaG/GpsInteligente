@@ -3,6 +3,8 @@ Configurar proxy no SENAC para usar gitbash:
 
 git config --global http.proxy USUARIO:SENHA@192.168.0.1:8080
 
+exemplo (q funciona):
+git config --global http.proxy 192.168.0.1:8080
 _________________________________________________________________
 
 Verificar o status do repositorio local:
