@@ -55,7 +55,7 @@ public class GPSInteligente extends JFrame {
 		
 		JPanel panel = new JPanel();
 		panel.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
-		panel.setBackground(SystemColor.controlHighlight);
+		panel.setBackground(SystemColor.scrollbar);
 		panel.setBounds(10, 33, 564, 120);
 		contentPane.add(panel);
 		panel.setLayout(null);
