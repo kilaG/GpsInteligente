@@ -29,6 +29,8 @@ import javax.swing.border.TitledBorder;
 import javax.swing.UIManager;
 import javax.swing.JToolBar;
 import javax.swing.JPopupMenu;
+import javax.swing.JRadioButtonMenuItem;
+import javax.swing.JRadioButton;
 
 
 public class GPSInteligente extends JFrame {
@@ -63,6 +65,29 @@ public class GPSInteligente extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		
+		JPanel panel_4 = new JPanel();
+		panel_4.setBackground(Color.DARK_GRAY);
+		panel_4.setBounds(533, 248, 109, 73);
+		contentPane.add(panel_4);
+		panel_4.setLayout(null);
+		
+		JRadioButton rdbtnDesativado = new JRadioButton("Desativado");
+		rdbtnDesativado.setBounds(0, 50, 109, 23);
+		panel_4.add(rdbtnDesativado);
+		rdbtnDesativado.setBackground(Color.DARK_GRAY);
+		rdbtnDesativado.setForeground(Color.RED);
+		
+		JRadioButton rdbtnNewRadioButton = new JRadioButton("Ativado");
+		rdbtnNewRadioButton.setBounds(0, 24, 109, 23);
+		panel_4.add(rdbtnNewRadioButton);
+		rdbtnNewRadioButton.setForeground(Color.CYAN);
+		rdbtnNewRadioButton.setBackground(Color.DARK_GRAY);
+		
+		JLabel lblModoInteligente = new JLabel("Modo Inteligente");
+		lblModoInteligente.setForeground(Color.GREEN);
+		lblModoInteligente.setBounds(10, 0, 99, 23);
+		panel_4.add(lblModoInteligente);
 		
 		JPanel panel_5 = new JPanel();
 		panel_5.setBounds(0, 0, 642, 21);
@@ -128,19 +153,6 @@ public class GPSInteligente extends JFrame {
 		panel.add(lblIdealKmh);
 		lblIdealKmh.setForeground(Color.GREEN);
 		lblIdealKmh.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		
-		JPanel panel_4 = new JPanel();
-		panel_4.setLayout(null);
-		panel_4.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
-		panel_4.setBackground(Color.DARK_GRAY);
-		panel_4.setBounds(543, 285, 99, 52);
-		contentPane.add(panel_4);
-		
-		JLabel lblNewLabel_2 = new JLabel("M.I Ativado");
-		lblNewLabel_2.setBounds(10, 11, 76, 30);
-		panel_4.add(lblNewLabel_2);
-		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblNewLabel_2.setForeground(Color.GREEN);
 		
 		JPanel panel_3 = new JPanel();
 		panel_3.setLayout(null);
