@@ -182,6 +182,19 @@ public class GPSInteligente extends JFrame {
 		lblNewLabel_1.setBounds(-171, 21, 813, 378);
 		contentPane.add(lblNewLabel_1);
 		
+		JPanel panel_6 = new JPanel();
+		panel_6.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
+		panel_6.setBackground(Color.DARK_GRAY);
+		panel_6.setBounds(97, 348, 61, 40);
+		contentPane.add(panel_6);
+		panel_6.setLayout(null);
+		
+		JLabel label = new JLabel("- 10");
+		label.setForeground(Color.RED);
+		label.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		label.setBounds(10, 11, 46, 18);
+		panel_6.add(label);
+		
 
 		ImageIcon mapa = new ImageIcon("src/mapa.png");
 	}
