@@ -173,8 +173,12 @@ public class GPSInteligente extends JFrame {
 	
 		
 		
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\Marcelo\\Dropbox\\Codigos\\Demo 1 - Engenharia 2 - GPSInteligente\\src\\mapa.png"));
-	
+		// OLD lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\Marcelo\\Dropbox\\Codigos\\Demo 1 - Engenharia 2 - GPSInteligente\\src\\mapa.png"));
+		
+		//lblNewLabel_1.setIcon(new ImageIcon("mapa.png"));
+		
+		URL url = GPSInteligente.class.getResource("/mapa.png");
+		lblNewLabel_1.setIcon(new ImageIcon(url));
 		
 		
 		//----------------------------------------------------------------------------------------------------
