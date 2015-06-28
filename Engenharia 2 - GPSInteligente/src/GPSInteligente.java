@@ -66,6 +66,19 @@ public class GPSInteligente extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		JPanel panel_6 = new JPanel();
+		panel_6.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
+		panel_6.setBackground(Color.DARK_GRAY);
+		panel_6.setBounds(97, 348, 61, 40);
+		contentPane.add(panel_6);
+		panel_6.setLayout(null);
+		
+		JLabel label = new JLabel("- 10");
+		label.setForeground(Color.RED);
+		label.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		label.setBounds(10, 11, 46, 18);
+		panel_6.add(label);
+		
 		JPanel panel_4 = new JPanel();
 		panel_4.setBackground(Color.DARK_GRAY);
 		panel_4.setBounds(533, 248, 109, 73);
@@ -173,10 +186,7 @@ public class GPSInteligente extends JFrame {
 	
 		
 		
-		// OLD lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\Marcelo\\Dropbox\\Codigos\\Demo 1 - Engenharia 2 - GPSInteligente\\src\\mapa.png"));
-		
-		//lblNewLabel_1.setIcon(new ImageIcon("mapa.png"));
-		
+		//lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\Marcelo\\Dropbox\\Codigos\\Demo 1 - Engenharia 2 - GPSInteligente\\src\\mapa.png"));
 		URL url = GPSInteligente.class.getResource("/mapa.png");
 		lblNewLabel_1.setIcon(new ImageIcon(url));
 		
@@ -185,19 +195,6 @@ public class GPSInteligente extends JFrame {
 
 		lblNewLabel_1.setBounds(-171, 21, 813, 378);
 		contentPane.add(lblNewLabel_1);
-		
-		JPanel panel_6 = new JPanel();
-		panel_6.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
-		panel_6.setBackground(Color.DARK_GRAY);
-		panel_6.setBounds(97, 348, 61, 40);
-		contentPane.add(panel_6);
-		panel_6.setLayout(null);
-		
-		JLabel label = new JLabel("- 10");
-		label.setForeground(Color.RED);
-		label.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		label.setBounds(10, 11, 46, 18);
-		panel_6.add(label);
 		
 
 		ImageIcon mapa = new ImageIcon("src/mapa.png");
